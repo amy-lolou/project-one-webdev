@@ -1,0 +1,279 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* STRIPPING STYLES */
+body, 
+h1,
+h2,
+h3,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ROOT */
+html {
+    font-size: 62.5%;   
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    color: #333333;
+    background: #fff;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* LOGO STYLING */
+.navLogo h2,
+.footerLogo h2 {
+    font-weight: 700;
+    font-size: 3.3rem;
+    color: #005769;
+    text-transform: lowercase;
+}
+
+/*  HEADER NAV STYLING */
+.headerNav {
+    min-width: 500px;  
+    position: relative;
+}
+
+.headerNav ul {
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+    position: absolute;
+    left: 710px;
+    bottom: 5px;
+}
+
+.headerNav  ul li {
+    padding: 15px;
+}
+
+/* HEADER STYLING */
+header {
+    background-image: url(./assets/image-main.jpeg);
+    background-size: cover;
+    height: 100vh;
+}
+
+h2.title {
+    font-weight: 700;
+    font-size: 6.8rem;
+    letter-spacing: 1.5px;
+    text-transform: lowercase;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 80px 0 0 10px;
+}
+
+.navLogo {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 40px;
+
+}
+
+/* BASE STYLES */
+h2,
+.overlay p {
+    font-size: 3.9rem;
+    font-weight: 700;
+    align-self: center;
+    text-align: center;
+    margin: 10px;
+    color:#333333;
+}
+
+h3 {
+    color: #777777;
+    text-transform: uppercase;
+    order: -1;
+    align-self: center;
+    margin: 30px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #777777;
+}
+
+button {
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px 19px;
+    border-radius: 11px;
+    margin: 0 auto;
+    color: #333333;
+    background: transparent;
+}
+button:hover,
+button:focus {
+    background: #16D6D1;
+}
+
+a {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+/* SECTION STYLING */
+section {
+    max-width: 1100px;
+    border-top: 50px solid #fff;   
+    margin: 0 auto;
+}
+    
+.one, 
+.two,
+.three {
+    display: flex;
+    justify-content: center;
+}
+
+.articleOne,
+.articleTwo {
+    background: #F6F8FA;
+    min-width: 700px; 
+    height: 50%;
+    padding-bottom: 20px;  
+    display: flex;
+    flex-direction: column;    
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
+.articleImage img {
+    display: block;
+}
+
+/* SECTION ONE */
+.one {
+    margin-top: 100px;
+}
+
+div.firstImage {
+    width: 45%;
+    margin-right: 50px;
+}
+
+/* SECTION TWO */
+.two {
+    margin-bottom: 25px;
+}
+div.thirdImage {
+    width: 45%;
+    margin-left: 50px;
+}
+
+/* SECTION THREE */
+.three {
+    margin-bottom: 60px;   
+}
+
+
+div.fifthImage {
+    width: 50%;
+    margin-right: 40px;
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+div.sixthImage {
+    width: calc( 50% - 40px);
+}
+
+/* FOOTER STYLING */
+footer {
+    background: #F6F8FA;
+    height: 70%;
+    width: 100vw;
+}
+
+.footerLogo {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 40px;
+}
+
+.footerNav {
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+}
+.footerNav li {
+    margin: 0 10px;
+}
+.footerNav a {
+    padding: 10px;
+    color: #333333;
+}
+
+.copyright {
+    border-top: 1px solid #777777;
+    margin: 100px 50px 0 50px;
+    padding: 10px;
+}
+div .footer{
+    position: relative;
+}
+.footerP {
+    display: inline-block;
+    width: 35%;
+    margin-left: 700px;
+    position: absolute;
+    left: 120px;
+    bottom: 90px;
+}
+
+
+
+
+
